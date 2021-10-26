@@ -1,0 +1,198 @@
+:root {
+  --color-headings: rgb(51, 51, 51);
+  --color-body: #949c9e;
+  --color-primary: rgb(111, 172, 47);
+  --color-primary-darker: rgb(93 136 221);
+  --color-accent: rgb(233, 30, 99);
+  --color-alternating: rgb(240, 240, 245);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--color-body);
+  font-family: Lato, Arial, Helvetica, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  font-weight: 700;
+  margin: 0;
+  line-height: 2.1rem;
+}
+
+h1 {
+  font-size: 4.4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 2rem;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.list--tick {
+  list-style: url(../images/tick.svg);
+}
+
+/* Buttons */
+
+.btn {
+  border-radius: 2px;
+  border: 0;
+  box-shadow: rgb(240, 240, 245) -5px -5px 0px;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0;
+  padding: 2rem 0;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.btn--outline {
+  background: none;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* Card-no-image domains pricing */
+
+.card {
+}
+
+.plan--discount {
+  background: var(--color-accent);
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.plan--header {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.plan--pricing {
+  white-space: nowrap;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.plan--from {
+  font-size: 1.6rem;
+}
+
+.plan--old-price {
+  font-size: 1.8rem;
+  color: var(--color-headings);
+  text-decoration: line-through;
+}
+
+.plan--pricing__curency {
+  font-size: 3rem;
+}
+.plan--pricing__amount {
+  font-size: 5.2rem;
+}
+
+.plan--pricing__duration {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--color-body);
+}
+
+.plan--header .btn {
+  margin-top: 2.4rem;
+}
+
+.plan--type {
+  color: var(--color-headings);
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2.4rem;
+  margin-bottom: 0;
+}
+
+.plan--includes {
+  font-size: 1.8rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.plan__detail:nth-child(odd) {
+  background: var(--color-alternating);
+}
+
+.plan__detail {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.plan__detail .value {
+  color: var(--color-headings);
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.plan__detail .text {
+  border-bottom: 1px dotted var(--color-body);
+  text-align: center;
+  padding: 0.3rem;
+}

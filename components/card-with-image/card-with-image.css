@@ -1,0 +1,86 @@
+/* Card Image */
+
+/* .card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(30, 30, 30, 0.9);
+  cursor: pointer;
+  display: grid;
+  grid-template-areas: "image" "text" "stats";
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 240px 80px;
+  margin-right: 4rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(30, 30, 30, 0.6);
+}
+
+.card__image > img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card__image {
+  grid-area: image;
+  background-size: cover;
+}
+
+.card__text {
+  grid-area: text;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__text h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card .card__list {
+  margin: 0;
+}
+
+.card__text .plan {
+  color: var(--color-primary);
+}
+
+.card__dets {
+  background: var(--color-primary);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: grid;
+  grid-area: stats;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.card__dets .value {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.card__dets .type {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.card__dets .det {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.card__dets .det:not(:last-child) {
+  border-right: 1px solid var(--color-primary-darker);
+} */
